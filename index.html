@@ -136,6 +136,14 @@
                       >
                         Agregar
                       </button>
+                      <button
+                        id="download"
+                        type="submit"
+                        class="btn btn-primary text-center mx-2 my-3"
+                        onclick="downloaData()"
+                      >
+                        Descargar
+                      </button>
                     </div>
                   </form>
                 </div>
@@ -146,10 +154,12 @@
                 <div class="card-body pt-0 pt-md-4">
                   <div class="text-center">
                     <div class="h5 mt-4">
-                      <h3 class="ni business_briefcase-24 mr-2"></h3>
+                      <h3
+                        class="ni business_briefcase-24 mr-2 text-center"
+                      ></h3>
                       INFORMACIÓN DE LA CUENTA
                     </div>
-                    <div id="list_elements"></div>
+                    <ul class="text-center" id="listElem"></ul>
                     <hr class="my-4" />
                     <h6 id="total"></h6>
                   </div>
@@ -166,7 +176,8 @@
       </footer>
     </body>
 
-    <script src="app_cost.js"></script>
+    <!--<script src="app_cost.js"></script>-->
+    <script src="refact_json.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
